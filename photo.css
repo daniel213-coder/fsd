@@ -1,0 +1,123 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.photo-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.left-column {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.photo {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.photo img:hover {
+    transform: scale(1.03);
+}
+
+
+.price-block {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f1c40f;
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #e74c3c;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    width: 100%; 
+}
+
+.btn:hover {
+    background: #c0392b;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+.calc-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.calc-inputs input {
+    width: 50px;
+    float: right;
+    border-radius: 5px;
+    border: none;
+    padding: 2px 5px;
+}
+
+#discount-info {
+    color: #f1c40f;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.error {
+    color: #ff4d4d !important;
+}
+
+.description { flex: 1; min-width: 300px; }
+h1 { color: #2c3e50; font-size: 2.5rem; border-bottom: 3px solid #3498db; padding-bottom: 10px; display: inline-block; }
+.highlight { background-color: #f8f9fa; padding: 25px; border-radius: 10px; margin: 20px 0; border-left: 5px solid #3498db; }
+ul.features { columns: 2; column-gap: 30px; list-style: none; padding: 0; }
+ul.features li { margin-bottom: 10px; position: relative; padding-left: 25px; }
+ul.features li:before { content: "✓"; color: #27ae60; position: absolute; left: 0; font-weight: bold; }
