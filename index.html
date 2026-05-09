@@ -3,64 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мир Путешествий - Турция</title>
+    <title>Мир Путешествий - Главная</title>
     <link rel="stylesheet" href="photo.css">
 </head>
 <body>
-    <div class="container">
-        <div class="photo-block">
-            <div class="left-column">
-                <div class="photo">
-                    <img src="https://avatars.mds.yandex.net/i?id=8371295e917603efcf663c13f57bed16_l-5333965-images-thumbs&n=13" alt="Италия">
-                </div>
-        
-                <div class="price-block">
-                    <p>Рассчитайте стоимость вашей поездки:</p>
-                    <div class="calc-inputs">
-                        <label>Количество человек: 
-                            <input type="number" id="people" value="1" min="1">
-                        </label>
-                        <label>Количество дней: 
-                            <input type="number" id="days" value="10" min="1">
-                        </label>
-                    </div>
-                    <div class="price">Итого: <span id="total-price">85 000</span> ₽</div>
-                    <p id="discount-info"></p>
-                    <button class="btn" id="book-btn">Забронировать сейчас</button>
-                </div>
-            </div>
-        
-            <div class="description">
-                <h1>Роскошный отдых в Италии</h1>
-                
-                <div class="highlight">
-                    <p>Погрузитесь в мир восточной сказки с нашим эксклюзивным туром по лучшим курортам Турции. 
-                    Белоснежные пляжи, кристально чистое море и безупречный сервис ждут вас!</p>
-                </div>
-                
-                <h2>Особенности тура:</h2>
-                <ul class="features">
-                    <li>Проживание в 5-звездочных отелях сети Rixos и Hilton</li>
-                    <li>Система питания "Ultra All Inclusive"</li>
-                    <li>Собственный песчаный пляж с шезлонгами</li>
-                    <li>Экскурсии в Памуккале и Эфес</li>
-                    <li>Детский клуб с анимацией</li>
-                    <li>SPA-центр с турецкой баней</li>
-                    <li>Вечерние шоу-программы</li>
-                    <li>Трансфер из аэропорта</li>
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">Travel<span>World</span></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#">Направления</a></li>
+                    <li><a href="#">О нас</a></li>
                 </ul>
-                
-                <h2>Маршрут путешествия:</h2>
-                <div class="route">
-                    <p>1. Стамбул — 2 дня (обзорная экскурсия по городу, круиз по Босфору)</p>
-                    <p>2. Анталия — 5 дней (отдых на море, экскурсия в Демре-Мира-Кекова)</p>
-                    <p>3. Каппадокия — 2 дня (полет на воздушном шаре, подземные города)</p>
-                </div>
-                
-                <p class="footer-quote">"Турция — это место, где сливаются воедино восточная экзотика и европейский комфорт. Наши клиенты возвращаются сюда снова и снова!"</p>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Откройте для себя новые горизонты</h1>
+                <p>Эксклюзивные туры по всему миру с безупречным сервисом и заботой о каждом клиенте.</p>
+                <a href="#tours" class="btn">Смотреть туры</a>
             </div>
         </div>
-    </div>
-    <script src="script.js"></script>
+    </section>
+
+    <main class="container" id="tours">
+        <h2 class="section-title">Популярные направления</h2>
+        <div class="tour-grid">
+            <!-- Карточка Турции -->
+            <div class="tour-card">
+                <div class="card-img">
+                    <img src="https://avatars.mds.yandex.net/i?id=8371295e917603efcf663c13f57bed16_l-5333965-images-thumbs&n=13" alt="Турция">
+                    <div class="card-price">от 8 500 ₽</div>
+                </div>
+                <div class="card-body">
+                    <h3>Роскошная Турция</h3>
+                    <p>Белоснежные пляжи, система "Все включено" и невероятная Каппадокия.</p>
+                    <a href="continue.html" class="btn-link">Подробнее →</a>
+                </div>
+            </div>
+
+
+            <div class="tour-card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&q=80&w=800" alt="Италия">
+                    <div class="card-price">от 12 000 ₽</div>
+                </div>
+                <div class="card-body">
+                    <h3>Римские каникулы</h3>
+                    <p>Погрузитесь в атмосферу вечного города, попробуйте лучшую пасту и посетите Колизей.</p>
+                    <a href="#" class="btn-link">Подробнее →</a>
+                </div>
+            </div>
+
+
+            <div class="tour-card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&q=80&w=800" alt="Франция">
+                    <div class="card-price">от 15 000 ₽</div>
+                </div>
+                <div class="card-body">
+                    <h3>Кино-тур: Огни Парижа</h3>
+                    <p>Романтика Эйфелевой башни и прогулки по местам съемок великих шедевров кино.</p>
+                    <a href="#" class="btn-link">Подробнее →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 Мир Путешествий. Создано для вашего комфорта.</p>
+        </div>
+    </footer>
 </body>
 </html>
